@@ -1,0 +1,8 @@
+extends layout
+block content
+    h1 Add Joke
+    form(action="newJoke" method="post")
+        input(name="joke")
+        input(type="submit")
+    br
+    a(href="/") back

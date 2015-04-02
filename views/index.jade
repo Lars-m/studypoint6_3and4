@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome #{user}
+  div
+    a(href="/joke") Show random Joke
+  div
+    a(href="/jokes") Show all jokes
+  div
+    a(href="/addJoke") Add new joke

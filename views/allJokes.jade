@@ -1,0 +1,7 @@
+extends layout
+block content
+    h1 All Jokes
+    div
+      each joke in jokes
+          p #{joke.joke}
+      a(href="/") back

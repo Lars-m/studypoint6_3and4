@@ -1,0 +1,13 @@
+extends layout
+block content
+    h1 Login
+    p If you have executed the "script" <b>addTestData</b> (just right click the file and press run) try with <b>userName: Peter</b> and <b>password: secret</b>
+    form(action="/" method="post")
+        label Username
+        input(name="userName")
+        br
+        label Password
+        input(name="password")
+        br
+        input(type="submit")
+    p(style="color:red") #{loginerror}
